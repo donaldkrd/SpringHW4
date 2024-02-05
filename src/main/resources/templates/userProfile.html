@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка сотрудника</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h1 th:text="${user.name}"></h1>
+<p>ID: <span th:text="${user.id}"></span></p>
+<p>Age: <span th:text="${user.age}"></span></p>
+<p>Email: <span th:text="${user.email}"></span></p>
+<p><a th:href="@{/users}">Вернуться к списку сотрудников</a></p>
+</body>
+</html>
